@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div style="align-self: flex-start; padding-top: 30px;">
         <h1>Calculadora</h1>
-        <p>by Kayki Letieri</p>
+        <p style="font-family: 'Montserrat', sans-serif; font-size: 16pt; color: rgb(105, 45, 45);">by Kayki Letieri</p>
     </div>
 
     <div id="conteudo">
         <div id="calculator">
-            <p id="resultado" class="result">  </p>
+            <p id="resultado" class="result"> </p>
 
             <table>
                 <tr>
-                    <td><button class="btn ac" onclick="clean()">AC</button></td>
+                    <td><button class="btn ac" style="width: 106px;" onclick="clean()">AC</button></td>
                     <td><button class="btn neg" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button></td>
                     <td><button class="btn ope" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button></td>
                 </tr>
@@ -51,7 +51,7 @@
                 <tr>
                     <td><button class="btn" onclick="insert('0')">0</button></td>
                     <td><button class="btn" onclick="insert('.')">.</button></td>
-                    <td><button class="btn igual" onclick="confirma()">=</button></td>
+                    <td><button id="btnigual" class="btn igual" style="width: 106px;" onclick="confirma()">=</button></td>
                 </tr>
 
 

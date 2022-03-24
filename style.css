@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: Chunkfive;
+    src: url(./fonts/Chunkfive\ Ex.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Digital;
+    src: url(./fonts/DS-DIGI.TTF) format('truetype');
+}
+
+:root{
+    --corcalc: #313131;
+    --corbtn: #333334;
+}
+
 body,html{
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle, rgba(191,191,191,1) 0%, rgba(96,96,96,1) 60%, rgba(38,38,38,1) 100%);
+    background: rgb(154,154,154);
+    background: radial-gradient(circle, rgba(154,154,154,1) 71%, rgba(70,69,69,1) 94%, rgba(69,68,68,1) 99%, rgba(55,55,55,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+h1{
+    font-family: 'Chunkfive', cursive;
+    font-size: 60pt;
+}
+
+#calculator{
+    width: 225px;
+    border-radius: 3px;
+    padding: 12px;
+    background-color: var(--corcalc);
+    box-shadow: 5px 10px 10px rgb(32, 32, 32);
+}
+
+.result{
+    height: 60px;
+    background-color: rgb(92, 92, 92);
+    box-shadow: inset 5px 5px 5px rgb(32, 32, 32);
+    border-radius: 7px;
+    margin-bottom: 10px;
+    text-align: right;
+    word-wrap: break-word;
+    padding: 5px;
+    font-family: Digital;
+    font-size: 30pt;
+    color: rgb(255, 255, 255);
+}
 
 table td{
     display: inline-block;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    background-color: var(--corbtn);
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+    background-color: #616161;
+}
+
+#btnigual{
+    background-color: rgb(105, 45, 45);
+}
+
+#btnigual:hover{
+    background-color: rgb(75, 27, 27);
 }
