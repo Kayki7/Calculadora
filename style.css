@@ -69,7 +69,7 @@ table td{
     color: rgb(255, 255, 255);
     font-size: 12pt;
 }
-.btn:hover{
+.btn :hover{
     background-color: #263441;
     box-shadow: inset -5px -5px #2b3a49;
 }
