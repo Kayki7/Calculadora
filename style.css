@@ -11,16 +11,15 @@
 }
 
 :root{
-    --corcalc: #313131;
-    --corbtn: #333334;
+    --corcalc: #35495C;
+    --corbtn: #576D7E;
 }
 
 body,html{
     height: 100%;
     width: 100%;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
-
-      
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply; 
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -37,13 +36,13 @@ h1{
     border-radius: 3px;
     padding: 12px;
     background-color: var(--corcalc);
-    box-shadow: 5px 10px 10px rgb(32, 32, 32);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.411);
 }
 
 .result{
     height: 60px;
-    background-color: rgb(92, 92, 92);
-    box-shadow: inset 5px 5px 5px rgb(32, 32, 32);
+    background-color: #89C763;
+    box-shadow: inset 5px 5px #3CB54A;
     border-radius: 7px;
     margin-bottom: 10px;
     text-align: right;
@@ -52,7 +51,7 @@ h1{
     padding: 5px;
     font-family: Digital;
     font-size: 30pt;
-    color: rgb(255, 255, 255);
+    color: #0E9347;
 }
 
 table td{
@@ -60,23 +59,39 @@ table td{
 }
 
 .btn{
+    border: none;
+    box-shadow: inset -5px -5px #3F556B;
     cursor: pointer;
     margin: 3px;
     width: 50px;
     height: 40px;
     background-color: var(--corbtn);
     color: rgb(255, 255, 255);
+    font-size: 12pt;
 }
 .btn:hover{
-    background-color: #616161;
+    background-color: #263441;
+    box-shadow: inset -5px -5px #2b3a49;
+}
+
+#btnac{
+    background-color: #DE333F;
+    box-shadow: inset -5px -5px #C61C31;
+}
+
+#btnac:hover{
+    background-color: #99242c;
+    box-shadow: inset -5px -5px #79111d;
 }
 
 #btnigual{
-    background-color: rgb(105, 45, 45);
+    background-color: #B0C4D9;
+    box-shadow: inset -3px -3px #99B5CD;
+    color: #5d6e7e;
 }
 
 #btnigual:hover{
-    background-color: rgb(75, 27, 27);
+    background-color: #8c9cad;
 }
 
 @media screen and (max-width: 500px) {
